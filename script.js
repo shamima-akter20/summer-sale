@@ -3,9 +3,17 @@ let total = 0;
 function handleclick(target){
 
 const selectedItemContainer = document.getElementById("selected-item");
+
+
+const count = selectedItemContainer.childElementCount;
+
+
 const itemName = target.childNodes[3].childNodes[3].innerText;
 const li = document.createElement('li');
-li.innerText = itemName;
+// li.innerText = itemName;
+
+li.innerText = `${count + 1}. ${itemName}`;
+
 selectedItemContainer.appendChild(li);
   
 const price = target.childNodes[3].childNodes[5].innerText.split(" ")[0];
