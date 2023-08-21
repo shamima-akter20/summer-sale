@@ -254,7 +254,9 @@
             <h1 class="text-lg font-semibold pb-3 ">Have coupon? </h1>
             <div class="">
                 <input id="inputField" class="py-4 w-40 input input-bordered font-semibold " placeholder="Coupon code" type="text" name="" > 
-                <button id="sale-offer" onclick="saleOffer()" class="font-bold text-white py-3 px-6 rounded -ml-3 hover:bg-[#652353]  bg-[#f033ba]">Apply</button>
+                <button disabled id="sale-offer" onclick="saleOffer()" class="btn btn-secondary">Apply</button>
+                <!-- <button disabled id="sale-offer" onclick="saleOffer()" class="font-bold text-white py-3
+                 px-6 rounded -ml-3 hover:bg-[#652353]  bg-[#f033ba]">Apply</button> -->
             </div>
         </div> 
     
@@ -280,8 +282,8 @@
         
         <hr>
 
-<button id="myButton" onclick="my_modal_3.showModal()"  class="w-64 mt-4 ml-2 
-font-semibold text-white py-3 px-6 rounded -ml-3 bg-[#f033ba]">Make Purchase</button>
+<button id="purchase-btn" onclick="my_modal_3.showModal()"  class="btn btn-secondary capitalize" disabled>Make Purchase</button>
+
 
 <div id="pop-up">
           
@@ -292,29 +294,13 @@ font-semibold text-white py-3 px-6 rounded -ml-3 bg-[#f033ba]">Make Purchase</bu
         <img class="m-auto h-28" src="./images/congo.png" alt="">
         <h1 class="text-3xl font-bold pt-7 pb-4 text-black">Congratulations</h1>
         <p class="text-sm text-slate-500 pb-7" >You Purchase the product</p>
-        <button  id="reloadButton" class="bg-[#f033ba] px-8 py-2 text-base font-semibold text-white rounded-lg ">Go Home</button>
+        <button  id="reloadButton" class="bg-[#f033ba] px-8 py-2 text-base font-semibold
+         text-white rounded-lg ">Go Home</button>
     </div>
   </form>
 </dialog> 
         </div> 
 
-        <!-- The button to open modal -->
-<!-- <label for="my_modal_6" id="myButton" onclick="toggleModal()" class="w-64 mt-4 ml-2 
-font-semibold text-white py-3 px-6 rounded -ml-3 bg-[#f033ba]" disabled>Make Purchase</label>
-
-
-<input type="checkbox" id="my_modal_6" class="modal-toggle" />
-<div class="modal">
-    <div class="bg-yellow-50 w-96 p-10 rounded-xl text-center">
-        <img class="m-auto h-28" src="./images/congo.png" alt="">
-        <h1 class="text-3xl font-bold pt-7 pb-4 text-black">Congratulations</h1>
-        <p class="text-sm text-slate-500 pb-7">You Purchased the product</p>
-        <div class="modal-action">
-            <label for="my_modal_6" id="reloadButton" class="bg-[#f033ba] px-8 py-2 text-base font-semibold
-            text-white rounded-lg">Go Home</label>
-        </div>
-    </div>
-</div> -->
 
        </div>
 

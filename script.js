@@ -18,6 +18,13 @@ document.getElementById("total").innerText = total;
  let discountTotal = total - (total*(20/100));
 
  let discountTaka = total * (20/100);
+ console.log(total);
+ if(total > 0){
+  document.getElementById('purchase-btn').disabled = false;
+ }
+if(total >= 200){
+  document.getElementById('sale-offer').disabled = false;
+ }
 
  document.getElementById("final-total").innerText = total;
 
@@ -72,25 +79,6 @@ function toggleModal(){
   } else {
     myBtn.disabled = true; // Disable the button
   }
-
-
-  // console.log("Button is " + (myBtn.disabled ? "disabled" : "enabled"));
-
-  // if(myBtn.disabled = false){
-  //   modalToggle.checked = true; // Show the modal
-  // }else{
-  //   modalToggle.checked = false; // Hide the modal
-  // }
-  
-   
-    // const modal = document.querySelector('.modal');
-
-    // // If the button is enabled, toggle the modal's visibility
-    // if (!myBtn.disabled) {
-    //     modalCheckbox.checked = !modalCheckbox.checked;
-    // }
-
-
 
 
 }
